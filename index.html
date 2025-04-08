@@ -11,26 +11,27 @@
 </head>
 <body>
     <div class="container">
-
-    
     <header>
         <h1>AI French Poem Generator</h1>
     </header>
 
     <main>
-        <form id="poem-generator">
-            <input 
-                type="text" 
-                placeholder="Enter the topic of the French poem" 
-                autofocus 
-                required 
-                autocomplete="off" 
-                class="instructions"
-                id="user-instructions"
-                />
-            <input type="submit" name="Submit" class="submit-button"/>
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+            <form id="poem-generator">
+                <input 
+                    type="text" 
+                    placeholder="Enter the topic of the French poem" 
+                    autofocus 
+                    required 
+                    autocomplete="off" 
+                    class="instructions"
+                    id="user-instructions"
+               />
+                <input type="submit" name="Submit" class="submit-button"/>
+            </form>
+            <div class="hint">i.e: Flower, Paris or Cheese</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
     </main>
     
     <footer>
@@ -41,8 +42,8 @@
         >
         and is hosted on Netlify.
     </footer>
-
 </div>
+
     <script src="src/index.js"></script>
 </body>
 </html>
